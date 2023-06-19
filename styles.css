@@ -1,0 +1,411 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Bai Jamjuree';
+}
+
+:root {
+    --h1:#4C545C;
+    --p: #9EABB2;
+    --white: #ffffff;
+    --button1: #26BBA4;
+    --button2: #6174FF;
+}
+
+h1 {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 40px;
+    color: var(--h1);
+    text-align: center;
+}
+
+h3 {
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 45px;
+    letter-spacing: .59px;
+    color: var(--h1);
+    text-align: center;
+}
+
+h6 {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 30px;
+    color: var(--white);
+    text-align: center;
+}
+
+p {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: .15px;
+    color: var(--p);
+    text-align: center;
+}
+
+.header {
+    width: 100%;
+    padding: 34% 8.5% 5% 8.5%;
+    background-image: url(./assets/background);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 64px;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    padding: 10% 8.5% 0% 8.5%;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 48px;
+    gap: 24px;
+}
+
+.button {
+    width: 311px;
+    height: 56px;
+    border-radius: 28px;
+    border: none;
+    box-shadow: 0px 10px 20px 0px #89E5C780;
+    box-shadow: 0px -3px 0px 0px #00000027 inset;
+}
+
+.but1 {
+    background-color: var(--button1);
+}
+
+.but2 {
+    background-color: var(--button2);
+}
+
+.monitor {
+    display: none;
+}
+
+.texts {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    gap: 16px;
+    margin: 160px 0 65px 0;
+}
+
+.compside {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.texts2 {
+    margin: 56px 0 186px 0;
+    gap: 48px;
+}
+
+.comptext {
+    font-size: 24px;
+    line-height: 30px;
+    letter-spacing: .39px;
+}
+
+.textbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.tabletact {
+    display: none;
+}
+
+.ipad {
+    display: flex;
+    flex-direction: column;
+}
+
+.textlg {
+    width: 44px;
+    height: 40px;
+}
+
+.textlg2 {
+    width: 36px;
+    height: 32px; 
+}
+
+.texts3 {
+    gap: 56px;
+}
+
+.textbox2 {
+    gap: 25px;
+}
+
+.companies {
+    display: flex;
+    justify-content: center;
+}
+
+.company {
+    display: none;
+}
+
+.lastsect {
+    display: flex;
+    flex-direction: column;
+    padding: 170px 0 170px 0;
+    gap: 16px;
+}
+
+.footer {
+    position: relative;
+    padding: 10% 30%;
+    width: 100%;
+}
+
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--p);
+    opacity: 0.1;
+    z-index: -1;
+}
+
+ul li {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+ul li a {
+    text-decoration: none;
+    font-family: 'Bai Jamjuree';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: .14px;
+    color: var(--h1);
+}
+
+.lists {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 40px 0 50px 0;
+}
+
+.list {
+    display: flex;
+    text-align: center;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.socials {
+    display: flex;
+    gap: 40px;
+}
+
+@media screen and (min-width: 900px) {
+    .header {
+        padding: 9% 9% 0 9%;
+    }
+
+    h1 {
+        font-size: 46px;
+        line-height: 58px;
+        letter-spacing: .75px;
+    }
+
+     .wid730 {
+        width: 730px;
+        font-size: 18px;
+    }
+    
+    section {
+        padding: 0;
+    }
+
+    .buttons {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .but1 {
+        width: 227px;
+        cursor: pointer;
+        opacity: 1;
+        transition: opacity .3s easy;
+    }
+
+    .but1:hover {
+        opacity: 0.7;
+    }
+
+    .but2 {
+        width: 227px;
+        cursor: pointer;
+        opacity: 1;
+        transition: opacity .3s easy;
+    }
+
+    .but2:hover {
+        opacity: 0.7;
+    }
+
+    .texts {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .monitor1 {
+        display: none;
+    }
+
+    .monitor {
+        display: block;
+    }
+
+    .compside {
+        flex-direction: row;
+        justify-content: start;
+        gap: 200px;
+    }
+
+    .start {
+        text-align: start;
+        align-items: start;
+    }
+
+    .plittle {
+        text-align: start;
+        width: 370px; 
+    }
+
+    .pad {
+        margin-top: 150px;
+    }
+
+    .tablet {
+        display: none;
+    }
+
+    .tabletact {
+        display: block;
+    }
+
+    .ipad {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .texts3 {
+        flex-direction: row;
+        text-align: center;
+        align-items: start;
+    }
+
+    .wid350 {
+        width: 350px;
+        height: 90px;
+    }
+
+    .textbox2 {
+        height: 210px;
+    }
+    
+    .social {
+        display: none;
+    }
+
+    .company {
+        display: block;
+    }
+
+    .lastsect {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer {
+        padding: 3% 0 3% 0;
+    }
+
+    .content {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 125px;
+    }
+
+    .lists {
+        flex-direction: row;
+        align-items: start;
+        justify-content: center;
+        text-align: start;
+        gap: 100px;
+        margin: 0;
+    }
+
+    .list {
+        text-align: start;
+    }
+
+    .socials {
+        gap: 20px;
+    }
+
+    .textlg {
+        width: 55px;
+        height: 55px;
+    }
+
+    ul li {
+        margin: 0;
+    }
+
+    ul li a:hover {
+        color: var(--button1);
+    }
+
+    .fb:hover path{
+        fill: var(--button1);
+        transition: fill 0.5s;
+    }
+
+    .twitter:hover path{
+        fill: var(--button1);
+        transition: fill 0.5s;
+    }
+
+    .insta:hover path{
+        fill: var(--button1);
+        transition: fill 0.5s;
+    }  
+}
